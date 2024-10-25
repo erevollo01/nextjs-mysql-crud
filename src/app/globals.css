@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-600 text-wheat; /* Fondo gris más claro y texto color trigo */
+}
+
+/* En globals.css */
+nav {
+  background-color: #fff; /* Color de fondo para la barra de navegación (teal oscuro) */
+  color: #333;
+}
+
+nav .container {
+  padding: 0 1rem; /* Espacio horizontal del contenedor */
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem; /* Espacio entre elementos */
+}
+
+
+nav ul li {
+  margin-left: 60rem; /* Espacio entre elementos de la lista */
+}
+
+
+form {
+    @apply bg-gray-700 p-4 rounded-lg; /* Fondo gris oscuro, padding y bordes redondeados a los formularios */
+    max-width: 500px; /* Limita el ancho máximo del formulario */
+    width: 100%; /* Hace que el formulario sea responsivo */
+}
+
+input, textarea, select {
+    @apply bg-gray-700 text-wheat border-gray-600 rounded-md p-2; /* Estiliza los inputs, textarea y select con fondo gris oscuro, texto color trigo, y bordes */
+    width: 100%; /* Asegura que todos los inputs ocupen el 100% del ancho disponible */
+}
+
+button {
+    @apply bg-green-600 hover:bg-blue-500 text-wheat font-bold py-2 px-4 rounded-md; /* Fondo gris oscuro y hover ligeramente más claro */
+}
+ /* Estilos globales para las tarjetas de producto */
+.product-card {
+    @apply bg-white rounded-lg border-gray-200 p-4 shadow-md hover:bg-wheat hover:cursor-pointer;
+}
+
+.product-name {
+    @apply text-lg font-bold mb-2 text-blue-900; /* Ajusta el color como desees */
+}
+
+.product-price {
+    @apply text-xl text-orange-500 mb-2; /* Ajusta el color como desees */
+}
+
+.product-description {
+    @apply text-gray-600; /* Ajusta el color como desees */
+}
